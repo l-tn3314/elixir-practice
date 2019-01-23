@@ -29,8 +29,6 @@ defmodule Practice.Calc do
   end 
   def postfix(symlist, opstack, symstack) do   
     [symlist_head | symlist_tail] = symlist
-    #case symlist_head do
-      #symlist_head when 
     if symlist_head in ["+", "-", "*", "/"] do
         op_to_opstack(symlist_tail, opstack, symstack, symlist_head) 
     else      
