@@ -1,5 +1,5 @@
 defmodule Practice.Factor do
-  # guard for neg?
+  # returns [], no prime factors for x < 2, for numbers less than first prime
   def factor(x), do: factor_help(x, 2, [])
 
   defp factor_help(x, cur_num, factors) when cur_num > x, do: factors
@@ -9,6 +9,5 @@ defmodule Practice.Factor do
     else 
       factor_help(x, cur_num + 1, factors)
     end
-
   end
 end

@@ -23,7 +23,6 @@ defmodule PracticeWeb.PageController do
     render conn, "factor.html", x: x, y: y
   end
 
-
   def palindrome(conn, %{"str" => str}) do
     is_palindrome = Practice.palindrome?(str)
     render conn, "palindrome.html", str: str, is_palindrome: is_palindrome

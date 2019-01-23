@@ -18,7 +18,6 @@ defmodule Practice.PracticeTest do
   end
 
   test "evaluate some expressions" do
-    #assert calc("8 - 7 + 8 * 3 / 2 - 1") == 12
     assert calc("5") == 5
     assert calc("5 + 1") == 6
     assert calc("5 * 3") == 15

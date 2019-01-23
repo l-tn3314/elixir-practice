@@ -17,8 +17,7 @@ defmodule Practice do
   end
 
   def factor(x) do
-    # Maybe delegate this too.
-    #[1,2,x]
+    # Delegate to lib/practice/factor.ex
     Practice.Factor.factor(x)
   end
 
