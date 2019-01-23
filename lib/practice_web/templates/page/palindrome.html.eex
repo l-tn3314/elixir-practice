@@ -2,6 +2,6 @@
   <div class="column">
     <p><%= link "← go back", to: "/" %></p>
     <h2>Palindrome Results</h2>
-    <p>Is <%= @str %> a palindrome: <%= @is_palindrome %></p> 
+    <p>Is '<%= @str %>' a palindrome: <%= @is_palindrome %></p> 
   </div>
 </div>
