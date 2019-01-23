@@ -22,5 +22,8 @@ defmodule Practice do
     Practice.Factor.factor(x)
   end
 
-  # TODO: Add a palindrome? function.
+  def palindrome?(str) do
+    reverse_str = String.reverse(str)
+    str == reverse_str
+  end 
 end
